@@ -4,21 +4,46 @@
 //
 //  Created by Jade Mawn on 5/5/24.
 //
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedLevel: Int?
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color.yellow.opacity(0.60)
+                .ignoresSafeArea()
+            
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    Text("Select a level:")
+                        .font(.title)
+                        .padding()
+                    
+                    HStack {
+                        VStack {
+                            ForEach(1..<11) { level in
+                                CircleButton(text:String(level), isSelected: selectedLevel == level) {
+                                    self.selectedLevel = level
+                                }
+                                .padding()
+                            }
+                        }
+                        
+                    }
+                    
+                    if let selectedLevel = selectedLevel {
+                        Text("Selected level: \(selectedLevel)")
+                            .padding()
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

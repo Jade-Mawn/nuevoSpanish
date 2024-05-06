@@ -14,6 +14,11 @@
 		2A5DEC8F2BE7ED6000F37258 /* nuevoSpanishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DEC8E2BE7ED6000F37258 /* nuevoSpanishTests.swift */; };
 		2A5DEC992BE7ED6000F37258 /* nuevoSpanishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DEC982BE7ED6000F37258 /* nuevoSpanishUITests.swift */; };
 		2A5DEC9B2BE7ED6000F37258 /* nuevoSpanishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DEC9A2BE7ED6000F37258 /* nuevoSpanishUITestsLaunchTests.swift */; };
+		2A5DECA82BE7F9E200F37258 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DECA72BE7F9E200F37258 /* SplashScreenView.swift */; };
+		2A5DECAA2BE810EB00F37258 /* InitLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DECA92BE810EB00F37258 /* InitLaunchView.swift */; };
+		2A5DECB22BE8140300F37258 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DECB12BE8140300F37258 /* PrimaryButton.swift */; };
+		2A5DECB62BE8437E00F37258 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DECB52BE8437E00F37258 /* CircleButton.swift */; };
+		2A5DECB82BE84E9400F37258 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DECB72BE84E9400F37258 /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		2A5DEC942BE7ED6000F37258 /* nuevoSpanishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nuevoSpanishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5DEC982BE7ED6000F37258 /* nuevoSpanishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuevoSpanishUITests.swift; sourceTree = "<group>"; };
 		2A5DEC9A2BE7ED6000F37258 /* nuevoSpanishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuevoSpanishUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A5DECA72BE7F9E200F37258 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		2A5DECA92BE810EB00F37258 /* InitLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitLaunchView.swift; sourceTree = "<group>"; };
+		2A5DECB12BE8140300F37258 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		2A5DECB52BE8437E00F37258 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		2A5DECB72BE84E9400F37258 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +105,12 @@
 		2A5DEC7B2BE7ED5F00F37258 /* nuevoSpanish */ = {
 			isa = PBXGroup;
 			children = (
+				2A5DECAC2BE8113B00F37258 /* Components */,
 				2A5DEC7C2BE7ED5F00F37258 /* nuevoSpanishApp.swift */,
+				2A5DECA72BE7F9E200F37258 /* SplashScreenView.swift */,
 				2A5DEC7E2BE7ED5F00F37258 /* ContentView.swift */,
+				2A5DECB72BE84E9400F37258 /* QuestionView.swift */,
+				2A5DECA92BE810EB00F37258 /* InitLaunchView.swift */,
 				2A5DEC802BE7ED6000F37258 /* Assets.xcassets */,
 				2A5DEC822BE7ED6000F37258 /* nuevoSpanish.entitlements */,
 				2A5DEC832BE7ED6000F37258 /* Preview Content */,
@@ -127,6 +141,15 @@
 				2A5DEC9A2BE7ED6000F37258 /* nuevoSpanishUITestsLaunchTests.swift */,
 			);
 			path = nuevoSpanishUITests;
+			sourceTree = "<group>";
+		};
+		2A5DECAC2BE8113B00F37258 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A5DECB12BE8140300F37258 /* PrimaryButton.swift */,
+				2A5DECB52BE8437E00F37258 /* CircleButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5DECB62BE8437E00F37258 /* CircleButton.swift in Sources */,
+				2A5DECB22BE8140300F37258 /* PrimaryButton.swift in Sources */,
 				2A5DEC7F2BE7ED5F00F37258 /* ContentView.swift in Sources */,
+				2A5DECB82BE84E9400F37258 /* QuestionView.swift in Sources */,
+				2A5DECAA2BE810EB00F37258 /* InitLaunchView.swift in Sources */,
 				2A5DEC7D2BE7ED5F00F37258 /* nuevoSpanishApp.swift in Sources */,
+				2A5DECA82BE7F9E200F37258 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
